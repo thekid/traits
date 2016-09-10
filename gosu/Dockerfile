@@ -1,5 +1,7 @@
 FROM debian:jessie
 
+PROVIDES thekid/gosu:1.9
+
 ENV GOSU_VERSION 1.9
 RUN set -x \
     && apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* \
