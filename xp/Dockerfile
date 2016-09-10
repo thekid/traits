@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM php:latest
 
 RUN apt-get update && apt-get install -y \
     xp-runners \
